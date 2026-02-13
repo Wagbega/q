@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "include": [
+    "/*"
+  ],
+  "exclude": [
+    "/api/*",
+    "/favicon.ico",
+    "/logos/*",
+    "/favicons/*"
+  ],
+  "routes": [
+    {
+      "pattern": "^/favicon\\.ico$",
+      "status": 200
+    },
+    {
+      "pattern": "^/(logos|favicons|assets)/.*",
+      "status": 200
+    },
+    {
+      "pattern": "^/api/.*",
+      "status": 404
+    }
+  ]
+}
